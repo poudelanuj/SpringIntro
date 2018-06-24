@@ -5,8 +5,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="students")
-public class Students implements Serializable {
+@Table(name="student")
+public class Student implements Serializable {
 
 
     @Id
@@ -21,12 +21,13 @@ public class Students implements Serializable {
     @Column(name="address")
     public String address;
     @Column(name="contact")
-    public String contact;
+    public String
+            contact;
 
-    public Students() {
+    public Student() {
     }
 
-    public Students(String name, String email, int age, String address, String contact) {
+    public Student(String name, String email, int age, String address, String contact) {
         this.name = name;
         this.email = email;
         this.age = age;

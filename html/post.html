@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>CRUD</title>
+  </head>
+  <body>
+    <form method="post" th:object="${student}" action="http://localhost:8080/student/createStudent/">
+      Name
+      <input type="text" name="name"/><br>
+      email
+      <input type="text" name="email"/><br>
+      age
+      <input type="text" name="age"/><br>
+      address
+      <input type="text" name="address"/><br>
+      contact
+      <input type="text" name="contact"/><br>
+      <input type="submit" value="submit"/><br>
+    </form>
+  </body>
+
+</html>
